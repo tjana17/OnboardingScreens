@@ -16,6 +16,8 @@
 		FF81EAEC2BC5005900D6C7E6 /* OnboardingScreensTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81EAEB2BC5005900D6C7E6 /* OnboardingScreensTests.swift */; };
 		FF81EAF62BC5005900D6C7E6 /* OnboardingScreensUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81EAF52BC5005900D6C7E6 /* OnboardingScreensUITests.swift */; };
 		FF81EAF82BC5005900D6C7E6 /* OnboardingScreensUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81EAF72BC5005900D6C7E6 /* OnboardingScreensUITestsLaunchTests.swift */; };
+		FF81EB092BC500F400D6C7E6 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81EB082BC500F400D6C7E6 /* OnboardingModel.swift */; };
+		FF81EB0B2BC505A700D6C7E6 /* OnboardingCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF81EB0A2BC505A700D6C7E6 /* OnboardingCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		FF81EAF12BC5005900D6C7E6 /* OnboardingScreensUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnboardingScreensUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF81EAF52BC5005900D6C7E6 /* OnboardingScreensUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreensUITests.swift; sourceTree = "<group>"; };
 		FF81EAF72BC5005900D6C7E6 /* OnboardingScreensUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreensUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FF81EB082BC500F400D6C7E6 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		FF81EB0A2BC505A700D6C7E6 /* OnboardingCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,10 @@
 		FF81EAD32BC5005700D6C7E6 /* OnboardingScreens */ = {
 			isa = PBXGroup;
 			children = (
-				FF81EAD42BC5005700D6C7E6 /* AppDelegate.swift */,
-				FF81EAD62BC5005700D6C7E6 /* SceneDelegate.swift */,
-				FF81EAD82BC5005700D6C7E6 /* ViewController.swift */,
+				FF81EB062BC5008C00D6C7E6 /* Model */,
+				FF81EB072BC5009600D6C7E6 /* Views */,
+				FF81EB052BC5007C00D6C7E6 /* Controller */,
+				FF81EB042BC5006D00D6C7E6 /* Resources */,
 				FF81EADA2BC5005700D6C7E6 /* Main.storyboard */,
 				FF81EADD2BC5005900D6C7E6 /* Assets.xcassets */,
 				FF81EADF2BC5005900D6C7E6 /* LaunchScreen.storyboard */,
@@ -125,6 +130,39 @@
 				FF81EAF72BC5005900D6C7E6 /* OnboardingScreensUITestsLaunchTests.swift */,
 			);
 			path = OnboardingScreensUITests;
+			sourceTree = "<group>";
+		};
+		FF81EB042BC5006D00D6C7E6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FF81EAD42BC5005700D6C7E6 /* AppDelegate.swift */,
+				FF81EAD62BC5005700D6C7E6 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FF81EB052BC5007C00D6C7E6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF81EAD82BC5005700D6C7E6 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FF81EB062BC5008C00D6C7E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF81EB082BC500F400D6C7E6 /* OnboardingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF81EB072BC5009600D6C7E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF81EB0A2BC505A700D6C7E6 /* OnboardingCollectionCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF81EB092BC500F400D6C7E6 /* OnboardingModel.swift in Sources */,
 				FF81EAD92BC5005700D6C7E6 /* ViewController.swift in Sources */,
 				FF81EAD52BC5005700D6C7E6 /* AppDelegate.swift in Sources */,
+				FF81EB0B2BC505A700D6C7E6 /* OnboardingCollectionCell.swift in Sources */,
 				FF81EAD72BC5005700D6C7E6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
